@@ -14,7 +14,7 @@
 <body>
 <main>
     
-<div class="intro">
+<div class="block intro">
     <div class="container">
         <div class="intro__inner">
             <div class="hat">
@@ -37,16 +37,46 @@
             <div class="search_block">
                 <div class="search-title">Насладись прогулкой в горах <br>с командой единомышленников</div>
                 <div class="search-settings">
-                    <input type="text">
-                    <div class="search-setting"></div>
-                    <div class="search-setting"></div>
-                    <div class="search-setting"></div>
-                    <button class="light-btn"></button>
+                    <div class="search-setting">
+                        <input class="select-set" type="text" id="location" placeholder="Локация для тура">
+                        <span>выберите из списка</span>
+                    </div>
+                    <div class="search-setting">
+                        <input class="select-set" type="text" id="data" placeholder="Дата похода">
+                        <span>укажите диапазон</span>
+                    </div>
+                    <div class="search-setting">
+                        <input class="select-set" type="text" id="clients" placeholder="Участники">
+                        <span>минимум 4 человека</span>
+                    </div>
+
+                    <button class="light-btn" style="font-size: 16px;">Найти программу</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="block about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="image_side">   
+                <img src="images/Rectangle%205.png" alt="">
+                <img src="images/Rectangle%204.png" alt="">
+            </div>
+            
+            <div class="text_side">
+                <div class="com-title">
+                    <h3>о нашем походе</h3>
+                    <h2>Исследуйте все горные массивы<br> мира вместе с нами</h2>
+                </div> 
+                <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
+                <button class="dark-btn">Программа тура</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </main>
 </body>
