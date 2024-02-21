@@ -31,6 +31,11 @@ main {
     };
 }
 
+img {
+    cursor: none;
+    pointer-events: none;
+}
+
 h1, h2, h3, h4, h5, h6, a, li {
     margin: 0;
 	padding: 0;
@@ -39,7 +44,7 @@ h1, h2, h3, h4, h5, h6, a, li {
 	vertical-align: baseline;
     color: #ffffff;
     text-decoration: none;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 li, ul {
@@ -72,11 +77,31 @@ button {
 .dark-btn {
     color: #FDFDFD;
     background-color: #1A3E3E;
+    
+    transition: all linear .2s;
+    
+    &:hover {
+        color: #1A3E3E;
+        background-color: #FDFDFD;
+        outline: 1px solid #1A3E3E;
+        
+        cursor: pointer;
+    }
 }
 
 .light-btn {
     color: #1A3E3E;
     background-color: #FDFDFD;
+    
+    transition: all linear .2s;
+    
+    &:hover {
+        color: #FDFDFD;
+        background-color: #1A3E3E;
+        outline: 1px solid #FDFDFD;
+        
+        cursor: pointer;
+    }
 }
 
 // HHHH
@@ -89,26 +114,46 @@ button {
 h2 {
     font: inherit;
     color: #18121E;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 700;
     
-    line-height: 38px;
+    line-height: 2.3rem;
 }
 
 h3 {
     font: inherit;
     color: #F2BE22;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 400;
     
-    line-height: 38px;
+    line-height: 1.85rem;
+}
+
+.h3--bold--light {
+    font-weight: 600;
+    color: #FDFDFD;
+}
+
+h4 {
+    font: inherit;
+    color: #18121E;
+    font-size: 1em;
+    font-weight: 600;
+    
+    line-height: 1.25rem;
 }
 
 p {
+    margin: 0;
     font: inherit;
     color: #18121E;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
     
-    line-height: 26px;
+    line-height: 1.5rem;
+    //white-space: nowrap;
+}
+
+.p--light {
+    color: #FDFDFD;
 }

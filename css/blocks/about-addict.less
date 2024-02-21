@@ -1,0 +1,90 @@
+// main: ../style.less
+
+.about-add {
+    width: 100%;
+}
+
+.about-add__inner {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_side {
+    position: relative;
+    
+    width: 100%;
+    max-width: 480px;
+    height: 526px;
+    
+    &--addict {
+        width: 100%;
+        max-width: 510px;
+        height: 510px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+.image_side img {
+    width: auto;
+    max-width: 350px;
+    height: 76%;
+    max-height: 400px;
+    
+    &:last-child {
+        position: absolute;
+        top: 24%;
+        left: 27%;
+    }
+}
+
+.image_side--addict img {
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    max-height: 250px;
+}
+
+.text_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.125rem;;
+    
+    width: 100%;
+    max-width: 580px;
+    
+    &--travel {
+        text-align: start;
+        font-size: .82rem;
+        max-width: 294px;
+        gap: 0;
+        justify-content: space-around;
+    }
+}
+
+.point {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.point-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.point_text p {
+    margin: 0;
+    font-size: .77rem;
+}

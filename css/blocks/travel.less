@@ -1,0 +1,61 @@
+// main: ../style.less
+
+.travel_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.travel_grid-item {
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    
+    width: 100%;
+    max-width: 580px;
+    height: 312px;
+    background-color: #FFFFFF;
+    
+    border-radius: 10px;
+    padding: 16px;
+    
+    transition: all linear .2s;
+    
+    &:hover {
+        box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, .2);
+        transform: translateY(-2px);
+        
+        cursor:pointer;
+    }    
+}
+
+.travel_grid-item img {
+    width: 230px;
+    height: 280px;
+}
+
+.travel_foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-data {
+    font-size: .875em;
+    font-family: inherit;
+    color: #F2BE22;
+    font-weight: 600;
+}
+
+.travel-link {
+    font-size: .875em;
+    font-family: inherit;
+    color: #1A3E3E;
+    font-weight: 600;
+}
