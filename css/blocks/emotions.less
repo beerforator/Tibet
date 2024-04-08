@@ -3,8 +3,8 @@
 .emotions_grid {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
 
@@ -16,24 +16,58 @@
     justify-content: space-between;
     gap: 24px;
     
+    flex-shrink: 0;
     width: 100%;
     //max-width: 280px;
-    height: 250px;
-    background-color: #a76f6f;
+    //height: 250px;
+    background: #1A3E3E;
     
     border-radius: 10px;
-    padding: 16px;
     
     transition: all linear .2s;
     
     &:hover {
+        position: relative;
         box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, .2);
         transform: translateY(-2px);
         
-        cursor:pointer;
+        //cursor: pointer;
+        
+        &::after {
+            content: '';
+            display: block;
+
+            position: absolute;
+            bottom: 14px;
+            left: 14px;
+
+            background: url("./../images/fa6-solid_hand-pointer.svg");
+            width: 21px;
+            height: 24px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+
+            background: url("./../images/iconamoon_zoom-in-light.svg");
+            width: 24px;
+            height: 24px;
+        }
     }    
     
     &:nth-child(1), &:nth-child(5) {
         grid-column: span 2;
     }
 }
+
+.emotions_grid-item img {
+    width: 100%;
+    height: 100%;
+}
+

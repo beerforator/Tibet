@@ -29,6 +29,21 @@ main {
     &:nth-child(odd) {
         background-color: #F3F5F4;
     };
+    
+    &:nth-child(6) {
+        padding: 5rem 0 12.5rem;
+        
+        @media screen and (max-width: 996px) {
+            padding-bottom: 18.75rem;
+        }
+    }
+    
+    &:last-child {
+        background: #1A3E3E;
+        padding: 0;
+    }
+    
+    
 }
 
 img {
@@ -109,6 +124,11 @@ button {
 .com-title {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    
+    &--footer {
+        font-size: .8em;
+    }
 }
 
 h2 {
@@ -117,7 +137,7 @@ h2 {
     font-size: 2em;
     font-weight: 700;
     
-    line-height: 2.3rem;
+    line-height: 2.1rem;
 }
 
 h3 {

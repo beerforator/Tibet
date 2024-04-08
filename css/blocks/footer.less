@@ -1,0 +1,254 @@
+// main: ../style.less
+
+.footer {
+    position: relative;
+    widht: 100%;
+    margin-bottom: 0;
+}
+
+.footer__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    //gap: 11.3rem;
+    //justify-content: center;
+    text-align: start;
+    align-items: center;
+    
+    padding: 11.3rem 0 175px;
+    
+    height: 100%;
+    //max-height: 500px;
+}
+
+.email_block {
+    position: absolute;
+    z-index: 2;
+    top: -98px;
+    left: 0;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    
+    width: 100%;
+    height: fit-content;
+    min-height: 196px;
+    
+    background: #fdfdfd;
+    border-radius: 6px;
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+    
+    padding: 40px 100px;
+    
+    @media screen and (max-width: 1200px) {
+        justify-content: space-between;
+        padding: 2.5rem 3%;
+    }
+    
+    @media screen and (max-width: 996px) {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+        
+        top: -198px;
+    }
+}
+
+.title-side {
+    //font-size: 1.7em;
+}
+
+.email-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: start;
+    
+    &::before {
+        content: 'Введите e-mail адрес';
+        display: block;
+        
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #18121E;
+        line-height: 18px;
+    }    
+    
+    &::after {
+        content: 'подписываясь на новости, вы автоматически соглашаетесь с условиями обработки персональных данных и правилами рекламных рассылок';
+        display: block;
+        
+        font-family: inherit;
+        font-size: .875rem;
+        font-weight: 500;
+        color: #18121E;
+        line-height: 18px;
+    }
+}
+
+.email-form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.email-sub {
+    background: #F3F5F4;
+    border-radius: 4px;
+    width: 100%;
+    min-width: 250px;
+    height: 100%;
+        
+    display: block;
+    padding: 14px 16px;
+    background-clip: padding-box;
+    border: none;
+    color: #18121E;
+    
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;  
+    
+    &::placeholder {
+        color: rgba(24, 18, 30, 0.6);
+    }
+}
+
+.footer_stuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    
+    width: 100%;
+    height: 100%;
+    max-height: 270px;
+    
+    @media screen and (max-width: 960px) {
+        gap: 2rem;
+    }
+}
+
+.stuff_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    
+    color: #F3F5F4;
+    font-size: .9rem;    
+    
+    &:first-child {
+        min-width: 40%;
+        
+        @media screen and (max-width: 1100px) {
+            min-width: 0;
+            max-width: 270px;
+        }
+    }
+}
+
+.column-reg {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+    text-decoration: underline;
+}
+
+.cont {
+    line-height: 1.1rem;
+    font-family: inherit;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.socials img {
+    width: 28px;
+    height: 28px;
+}
+
+.footer-a { 
+    &:hover {
+        color: #F2BE22;
+        text-decoration: underline;
+    }
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 18px;
+    
+    color: inherit;
+    
+    &::before {
+        content: '';
+        display: inline-block;
+        //background: url("../../images/Vector-sw.svg") no-repeat;
+        mask: url("./../images/Vector-sw.svg") no-repeat 50% 50%;
+        width: 6px;
+        height: 10px;
+        background-color: #FDFDFD;
+    }
+    
+    //transition: background 1s ease-in-out;
+    
+    &:hover {
+        color: #F2BE22;
+        text-decoration: underline;
+        &::before {
+            background: #F2BE22;
+        }
+    }
+}
+
+//===
+
+.ip_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 4.2rem;
+    
+    background: #18121E;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ip-item {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 18px;
+}

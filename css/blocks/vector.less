@@ -20,6 +20,10 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+    
+    @media screen and (max-width: 930px) {
+        overflow: hidden;
+    }
 }
 
 .vector_slider-item {
@@ -65,7 +69,7 @@
         width: 17px;
         height: 18px;
         position: relative;
-        background: url("./../../images/star.svg");
+        background: url("./../images/star.svg");
         
         margin-right: 6px;
         
@@ -94,12 +98,17 @@
     border: none;
     backdrop-filter: blur(3px);
     
-    padding: 32px 30px 20px;
+    padding: 2rem 2rem 1.5rem;
     
     transform: translateY(390px);
     transition: transform 2s;
     &:hover {
         transform: translateY(0);
+    }
+    
+    @media screen and (max-width: 1200px) {
+        padding: 1.2rem 1.2rem 1rem;
+        transform: translateY(400px);
     }
 }
 
@@ -109,6 +118,10 @@
     gap: 30px;
     justify-content: space-between;
     align-items: center;
+    
+    @media screen and (max-width: 1200px) {
+        gap: 1rem;
+    }
 }
 
 .curtain-title-text {
@@ -130,4 +143,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    @media screen and (max-width: 1050px) {
+        display: none;
+    }
 }
